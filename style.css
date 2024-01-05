@@ -1,0 +1,118 @@
+*{box-sizing: border-box;}
+
+header {
+    display: flex;/*橫排*/
+    align-items: center;/*讓Logo 跟 Menu 上下居中*/
+    padding:10px 20px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+    margin-top: 20px;
+    position: sticky;
+    top: 20px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+}
+header h1.logo {
+    margin-right: auto;/*撐開中間的距離*/
+}
+header a {
+    color: #11110b;
+    text-decoration: none;/*清除超連結的底線*/
+    display: block;/*把超連結轉換成區塊(才可以設定寬高)*/
+}
+.menu ul {
+    display: flex;/*讓選單也橫排*/
+    gap: 16px;/*關於間格距離的部分*/
+    list-style:none;/*隱藏列表圓點*/
+}
+.menu a {
+    font-size: 20px;
+    padding: 6px 16px;/*把可以點選的範圍撐大*/
+    border-radius: 20px;
+}
+.menu a:hover {/*滑鼠移上去之後的狀態*/
+    color: aliceblue;
+    background-color: #706d40;
+}
+a.anchor {/*自訂定位點*/
+    position: relative;
+    top: -114px;/*把定位點往上調*/
+    visibility: hidden;/*可見度為零*/
+}
+.wrap {
+    width: 1000px;
+    margin-inline: auto;/*區塊左右置中*/
+}
+
+.bigcard{
+    width: 1000px;
+    height: 600px;
+    background-color: #11110b;
+    background-image: url(photo/Index.jpg);
+    background-size: cover;
+    margin: 20px 0px 20px 0px;
+    border-radius: 20px;
+}
+.wrap-all{
+    width: 1000px;
+    height: 600px;
+    background-color: antiquewhite;
+    border-radius: 20px;
+}
+.title{
+    padding-top: 10px;
+    line-height: 100%;
+    color: #000000;
+    font-size: 50px;
+    font-weight: 900;
+    width: 450px;
+    padding-left: 425px;
+}
+.slogan{
+    padding-top: 15px;
+    color: #676767;
+    font-size: 25px;
+    font-weight: 900;
+    width: 100%;
+    padding-left: 355px;
+}
+.curve{
+    margin: 30px 20px 0px 20px;
+    width: 100%;
+    border-top-left-radius: 150px;
+    border-top-right-radius: 150px;
+    overflow: hidden;
+}
+.one .curve-image{
+    background-image:url(photo/2780908a92aeaecf89f4d8e3576e302d.jpg);
+}
+.two .curve-image{
+    background-image:url(photo/4c48aa09b949cdfbb86488750134aa58.jpg);
+}
+.three .curve-image{
+    background-image:url(photo/7c24ea988c093dbfd4a7c29e5195b443.jpg);
+}
+
+.curve-image{
+    width: 100%;
+    display: block;
+    aspect-ratio: 1;/*設定圖片的顯示長寬比*/
+}
+
+/*.card-title{
+    color: #364a3b;
+    padding-top: 10px;
+    font-size: 22px;
+}*/
+
+.card-intro{
+    color: #141513;
+    background-color: white;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.curve-all{
+    width: 100%;
+    display: flex;
+    gap: 20px;
+}
