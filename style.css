@@ -1,6 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400&display=swap');
 *{box-sizing: border-box;}
-
+body{
+    font-family: 'Roboto Slab', serif;
+}
 header {
+    
     display: flex;/*橫排*/
     align-items: center;/*讓Logo 跟 Menu 上下居中*/
     padding:10px 20px;
